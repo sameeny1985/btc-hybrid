@@ -1,0 +1,16 @@
+اجرای محلی نسخه تکمیل‌شده:
+
+1) Python 3.11.10 نصب باشد.
+2) در پوشه پروژه اجرا کن:
+   python -m venv .venv
+   .venv\\Scripts\\activate
+   pip install -r requirements.txt
+3) فایل .env.example را به .env کپی کن و توکن و Chat ID تلگرام را داخل .env بگذار.
+4) برای اجرای محلی بدون PostgreSQL، DATABASE_URL را در .env تعریف نکن.
+5) اجرا:
+   python start.py
+6) صفحه وضعیت:
+   http://127.0.0.1:10000/
+   http://127.0.0.1:10000/health
+
+در Render، Start Command باید python start.py باشد. توضیحات کامل در README.md آمده است.
